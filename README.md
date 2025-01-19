@@ -40,7 +40,8 @@ cd eight-spots
 
 2. Start the application using Docker
 ```bash
-./app/build_docker.sh
+cd app
+./build_docker.sh
 ```
 
 3. Access the application at `http://localhost:3000`
