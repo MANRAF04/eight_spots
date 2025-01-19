@@ -6,7 +6,7 @@ A full-stack web application for managing a video club chain, built with Node.js
 
 ## Features ✨
 
-- User authentication and profile management
+- User authentication and profile management (Bcrypt Encryption)
 - Browse and search movies
 - Purchase movies and maintain a personal library
 - Mark movies as watched/unwatched
@@ -46,6 +46,8 @@ cd app
 
 3. Access the application at `http://localhost:3000`
 
+4. Default admin login: `admin:admin`
+4. Default user login: `user:user`
 ## Database Schema 📊
 
 The database consists of the following main tables:
