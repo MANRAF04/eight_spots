@@ -1,0 +1,191 @@
+/* styles/style.css */
+
+/* Default light mode styles */
+body {
+          font-family: Arial, sans-serif;
+          background-color: #333;
+          color: #f4f4f4;
+          margin: 0;
+          padding: 20px;
+}
+
+h1 {
+          color: #f4f4f4;
+}
+
+h2 {
+          color: #f4f4f4;
+}
+
+img {
+          display: block;
+}
+
+ul {
+          list-style-type: none;
+          padding: 0;
+}
+
+li {
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          background: #444;
+          color: #f4f4f4;
+}
+
+
+/* Tab styles */
+.tabs {
+          display: flex;
+          margin-bottom: 16px;
+}
+
+.tab {
+          background-color: transparent;
+          color: #f4f4f4;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s;
+}
+
+.tab:hover {
+          background-color: #e0e0e0;
+          color: #444;
+}
+
+.tab.active {
+          background-color: #fff;
+          color: #444;
+          border-bottom: 2px solid #8799ac;
+          /* Active tab color */
+          font-weight: bold;
+}
+
+.tab-content {
+          padding: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+}
+
+.flip-card {
+          background-color: transparent;
+          width: 15vw;
+          height: 35vh;
+          perspective: 1000px;
+          font-family: sans-serif;
+          margin: 0.25rem 0.3rem;
+          font-size: 0.75vw;
+}
+
+.title {
+          font-size: 1.2em;
+          font-weight: 800;
+          text-align: center;
+          margin: 0;
+}
+
+.flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+          box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          border-radius: 1rem;
+}
+
+.flip-card-back {
+          overflow: auto;
+          /* Allow scrolling if content overflows */
+          /* max-height: 300px; */
+          /* Set a maximum height */
+}
+
+/* @media (max-width: 600px) { */
+/* .flip-card-back { */
+/* max-height: 200px; */
+/* Adjust max height for smaller screens */
+/* } */
+/* } */
+
+.flip-card-front {
+          background: linear-gradient(120deg, #126650 30%, #2C5784 88%, #126650 40%, #2C5784 78%);
+          color: coral;
+}
+
+.flip-card-back {
+          background: linear-gradient(120deg, #126650 30%, #2C5784 88%, #126650 40%, #2C5784 78%);
+          color: white;
+          transform: rotateY(180deg);
+}
+
+/* Add this to your styles.css */
+.diagonal-line {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50px;
+          /* Adjust the width of the line */
+          height: 5px;
+          /* Adjust the height of the line */
+          background-color: blue;
+          /* Color of the line */
+          transform: rotate(45deg);
+          /* Rotate to create a diagonal effect */
+          transform-origin: top right;
+          /* Set the origin for the rotation */
+}
+
+nav {
+          padding: 10px;
+          /* Padding around the navbar */
+}
+
+nav ul {
+          list-style-type: none;
+          /* Remove bullet points */
+          margin: 0;
+          /* Remove default margin */
+          padding: 0;
+          /* Remove default padding */
+          display: flex;
+          /* Use flexbox for horizontal layout */
+          align-items: center;
+          /* Center items vertically */
+          justify-content: space-evenly;
+}
+
+nav a {
+          color: white;
+          /* Link color */
+          text-decoration: none;
+          /* Remove underline */
+          font-weight: bold;
+          /* Bold text */
+}
+
+nav a:hover {
+          text-decoration: underline;
+          /* Underline on hover */
+}
